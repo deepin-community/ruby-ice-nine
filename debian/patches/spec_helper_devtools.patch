@@ -1,0 +1,16 @@
+Description: remove usage of devtools from spec_helper. It's not yet available
+ in Debian
+Author: Jonas Genannt <jonas.gennant@capi2name.de>
+Forwarded: not-needed
+Last-Update: 2016-07-06
+
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -19,7 +19,6 @@
+ end
+ 
+ require 'ice_nine'
+-require 'devtools/spec_helper'
+ 
+ RSpec.configure do |config|
+   config.expect_with :rspec do |expect_with|

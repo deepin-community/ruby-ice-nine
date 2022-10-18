@@ -1,0 +1,3 @@
+spec_helper_devtools.patch
+require_shared_examples.patch
+0003-Skip-tests-trying-to-modify-frozen-Range.patch

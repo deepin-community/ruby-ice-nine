@@ -1,0 +1,26 @@
+Source: ruby-ice-nine
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Genannt <jonas.genannt@capi2name.de>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb,
+               ruby-rspec,
+               ruby-rspec-its
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-ice-nine.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-ice-nine
+Homepage: https://github.com/dkubb/ice_nine
+XS-Ruby-Versions: all
+Testsuite: autopkgtest-pkg-ruby
+
+Package: ruby-ice-nine
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: Ruby module to deep freeze objects
+ This package provides a Ruby module that allows one to deep freeze
+ Ruby objects. This module provides an alternative method of freezing objects
+ to the embedded from the Ruby Object module.
